@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(119, 117, 117);
+}
+
+header {
+    text-align: center;
+}
+h1, header {
+   margin-bottom: 30px; 
+}
+input, button {
+    padding: 13px;
+}
+.container{
+    text-align: center;
+}
+
+button, li{
+    cursor: pointer;
+}
+.clicado{
+    text-decoration: line-through;
+}
