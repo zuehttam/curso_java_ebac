@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Cadastro</h2>
+        <form id="cadastro-form">
+            <div class="container-input">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="container-input">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="container-input">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="container-input">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="container-input">
+                <label for="tipo-moradia">Tipo de Moradia:</label>
+                <select id="tipo-moradia" name="tipo-moradia" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="casa">Casa</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+            </div>
+            <div id="casa-inputs" class="container-input hidden">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+                <label for="numero-casa">Número:</label>
+                <input type="text" id="numero-casa" name="numero-casa">
+            </div>
+            <div id="apartamento-inputs" class="container-input hidden">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro">
+                <label for="nome-edificio">Nome do Edifício:</label>
+                <input type="text" id="nome-edificio" name="nome-edificio">
+                <label for="numero-apartamento">Número do Apartamento:</label>
+                <input type="text" id="numero-apartamento" name="numero-apartamento">
+            </div>
+            <div class="container-input">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
